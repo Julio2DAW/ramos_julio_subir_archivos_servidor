@@ -20,12 +20,12 @@
             </ul>
         </nav>
 
-        <h2>Subir Imágenes</h2>
+        <h2>Subir Archivos</h2>
 
         <div>
             <form method="post" enctype="multipart/form-data" action="#">
                 <label>Subir Img</label>
-                <input type="file" name="img"><br/>
+                <input type="file" name="arc"><br/>
                 <input type="submit" id="submit" value="Subir">
             </form>
 

@@ -8,15 +8,15 @@
         function subirImg(){
 
             //Comprobar si existe el archivo
-            if (isset($_FILES['img'])) {
+            if (isset($_FILES['arc'])) {
 
                 $subida = "archivos/";
-                $archivo_subido = $subida.$_FILES['img']['name'];
+                $archivo_subido = $subida.$_FILES['arc']['name'];
 
                 //Subimos los archivos al servidor
                     //Si falla se le comunicará al usuario que la operación erronea
                     //Si no falla se le comunicará operación finalizada
-                if (move_uploaded_file($_FILES['img']['tmp_name'], $archivo_subido)) {
+                if (move_uploaded_file($_FILES['arc']['tmp_name'], $archivo_subido)) {
                    
                     echo "<p>Subida del archivo finalizada</p>";
                 } else {
@@ -25,5 +25,8 @@
                 }  
             }
         }
+
+
+        function 
     }
 ?>
