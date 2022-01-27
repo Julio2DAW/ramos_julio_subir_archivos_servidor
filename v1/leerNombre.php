@@ -10,8 +10,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta authot="Julio Antonio Ramos Gago <jramosgago.guadalupe@alumnado.fundacionloyola.net>" />
-            
-        <title>Subir Archivos Servidor</title>
+
+        <title>Leer Nombre</title>
     </head>
     <body>
         <nav>
@@ -33,7 +33,7 @@
 
             <?php
 
-                $metodos->subirArc();
+                $metodos->leerArchivos("archivos");
             ?>
         </div>
     </body>

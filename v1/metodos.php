@@ -1,11 +1,14 @@
 <?php
-
+    /**
+     * @file
+     * @author Julio Antonio Ramos Gago <jramosgago.guadalupe@alumnado.fundacionloyola.net>
+     */
     class Metodos{
 
         /**
-         * @method Función para subir archivos al servidor
+         * @method Función para subir archivos al servidor subirImg()
          */
-        function subirImg(){
+        function subirArc(){
 
             //Comprobar si existe el archivo
             if (isset($_FILES['arc'])) {
@@ -26,7 +29,37 @@
             }
         }
 
+        /**
+         * @method Función para leer archivos leerArchivos()
+         */
+        function leerArchivos($ruta){
 
-        function 
+            $archivo= opendir($ruta);
+            echo "<div>";
+
+            while(($archivos = readdir($archivo)) ) {
+
+                echo "<p>".$archivos."</p>";
+            }
+
+            echo "</div>";
+            closedir($archivo);
+        }
+
+        /**
+         * @method Función para ver archivos verImg()
+         */
+        function verImg($ruta){
+
+            $archivo= opendir($ruta);
+    
+            while(($archivos = readdir($archivo)) ) {
+    
+                echo "<img src=archivos/$archivos>";
+    
+            }
+    
+            closedir($archivo);
+        }
     }
 ?>

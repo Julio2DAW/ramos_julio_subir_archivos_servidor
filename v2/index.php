@@ -33,7 +33,7 @@
 
             <?php
 
-                $metodos->subirArc();
+                $metodos->subirArc2();
             ?>
         </div>
     </body>
