@@ -1,0 +1,2 @@
+# ramos_julio_subir_archivos_servidor
+Realiza una aplicación que permita subir imágenes al servidor y mostrarlas. Los versiones serán las siguientes:      V1- Web con 2 opciones: Subir imágenes y mostrar galería de imágenes (todas las imágenes subidas). La web muestra 3 enlaces: Subir imágenes, Ver nombre de la imagen (nombre del archivo), Ver imágenes.     V2- Validar formato de archivos y tamaño permitidos en la subida.     v3- Subir archivos pdf.
